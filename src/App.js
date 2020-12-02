@@ -20,8 +20,11 @@ function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <StatisticList title="My Uploads" stats={statisticalData} />
+
+      <StatisticList title="Upload stats" stats={statisticalData} />
+      
       <FriendList items={friends} />
+
       <TransactionHistory props={transactions} />
     </div>
   );
